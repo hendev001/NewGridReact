@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -35,4 +36,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "top-left top-middle top-right"
+    "bottom bottom bottom"
+}
+
+.item-a {
+  grid-area: top-left;
+}
+.item-b {
+  grid-area: top-middle;
+}
+.item-c {
+  grid-area: top-right;
+}
+.item-d {
+  grid-area: bottom;
+}
+
+
+table {
+  width: 100%;
+}
+
+table td {
+  width: 50%;
+  background: #dbdbdb;
+  text-align: center;
+}
+
+table tr:nth-child(2n+1) {
+  position:relative;
+  display:block;
+  height:20px;
+  background:green;
+}
+
+table tr:nth-child(2n+1) td {
+  position:absolute;
+  left:0;
+  right:-100%;
+  width: auto;
+  top:0;
+  bottom:0;
+  background:red;
+  text-align:center;
 }
