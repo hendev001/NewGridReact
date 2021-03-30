@@ -70,13 +70,13 @@ function LandingPage() {
           label="Zip"
           variant="outlined"
           size="small"
-          style={{ width: "170px", margin: "0 10px" }}
+          style={{ width: "179px", margin: "0 1px" }}
         />
         <TextField
           label="Phone"
           variant="outlined"
           size="small"
-          style={{ width: "400px" }}
+          style={{ width: "400px" , margin: "0 9px"}}
         />
       </div>
     </div>
